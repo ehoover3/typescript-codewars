@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { add, multiply, removeDuplicates } from "./Codewars";
+import { add, multiply } from "./Codewars";
 
 describe("add", function () {
-  it("should return the sum", () => {
+  test("should return the sum", () => {
     expect(add(1, -1)).toBe(0);
     expect(add(1, 0)).toBe(1);
     expect(add(1, 1)).toBe(2);
@@ -10,9 +10,9 @@ describe("add", function () {
 });
 
 describe("multiply", function () {
-  it("should return the product", () => {
-    expect(add(1, -1)).toBe(-1);
-    expect(add(1, 0)).toBe(1);
-    expect(add(1, 1)).toBe(2);
+  test("should return the product", () => {
+    expect(multiply(1, -1)).toBe(-1);
+    expect(multiply(1, 0)).toBe(0);
+    expect(multiply(1, 2)).toBe(2);
   });
 });
