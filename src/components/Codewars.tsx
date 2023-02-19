@@ -17,3 +17,6 @@ export function multiply(a: number, b: number): number {
 }
 
 // 3.  Ask other people in your group:  What is one of the best pieces advice you have ever been given?
+// abc
+
+function history(): void {}
